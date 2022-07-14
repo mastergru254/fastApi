@@ -1,5 +1,4 @@
 #from curses.ascii import BS
-from tkinter import CASCADE
 from sqlalchemy import Column, ForeignKey, Integer, PrimaryKeyConstraint, String, Boolean
 from sqlalchemy.sql.expression import text
 from sqlalchemy.sql.sqltypes import TIMESTAMP
