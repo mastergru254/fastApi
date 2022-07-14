@@ -5,7 +5,6 @@ Revises: 228c129080a2
 Create Date: 2022-07-13 12:12:47.894239
 
 """
-from tkinter import CASCADE
 from alembic import op
 import sqlalchemy as sa
 
@@ -23,7 +22,7 @@ def upgrade():
                           source_table="posts",
                           referent_table="users", 
                           local_cols=['owner_id'], 
-                          remote_cols=['id'], ondelete=CASCADE)
+                          remote_cols=['id'], ondelete="CASCADE")
     pass
 
 
